@@ -1,4 +1,4 @@
-	$(function() {
+$(function() {
 
 	// --------------content jquery hide/show
 	   $(".content").hide();
@@ -60,29 +60,29 @@
 			number.sort(compareNumeric);
 			var choose1 = $("#first option:selected").val();
 			if(choose1=="number"){
-			diagram('container11','Діаграма повторень символів',number);
+			diagram('container11','Character Repeat Chart',number);
 
 			}
 			else{
 
-				diagram('container11','Діаграма повторень символів',number.sort());
+				diagram('container11','Character Repeat Chart',number.sort());
 			}
 
 			var choose4 = $("#four option:selected").val();
 			if(choose4=="number"){
 
-				diagram('container2','Діаграма повторень символів',number);
+				diagram('container2','Character Repeat Chart',number);
 
 			}
 			else{
-				diagram('container2','Діаграма повторень символів',number.sort());
+				diagram('container2','Character Repeat Chart',number.sort());
 
 			}
 		});
 		// -------VAR TEXT VAR APLH
 		var text = "ALTHOUGH CRYPTOGRAPHY HAS A LONG AND COMPLEX HISTORY, IT WASN'T UNTIL THE CENTURY THAT IT DEVELOPED ANYTHING MORE THAN AD HOC APPROACHES TO EITHER ENCRYPTION OR CRYPTANALYSIS THE SCIENCE OF FINDING WEAKNESSES IN CRYPTO SYSTEMS. EXAMPLES OF THE LATTER INCLUDE CHARLES BABBAGE'S CRIMEAN WAR ERA WORK ON MATHEMATICAL CRYPTANALYSIS OF POLYALPHABETIC CIPHERS, REDEVELOPED AND PUBLISHED SOMEWHAT LATER BY THE PRUSSIAN FRIEDRICH KASISKI. UNDERSTANDING OF CRYPTOGRAPHY AT THIS TIME TYPICALLY CONSISTED OF HARD-WON RULES OF THUMB; SEE, FOR EXAMPLE, AUGUSTE KERCKHOFFS'CRYPTOGRAPHIC WRITINGS IN THE LATTER CENTURY. EDGAR ALLAN POE USED SYSTEMAT IC ME";
 		var alph = "ABCDEFGHIJKLMNOPQRSTUVWXYZ .,;-'";
-	// -------obvedenna sumvliv
+	// -------markup symbols
 		$("#find").keyup(function(){
 			var text = $("#text1").val();
 			var word = $("#find").val().toUpperCase();
@@ -156,9 +156,9 @@
 		number.sort(compareNumeric);
 		bigram.sort(compareNumeric);
 		threegram.sort(compareNumeric);
-		diagram('container11','Діаграма повторень символів',number.slice(0,15));
-		diagram('container12','Діаграма повторень біграм',bigram.slice(0,15));
-		diagram('container13','Діаграма повторень триграм',threegram.slice(0,15));
+		diagram('container11','Character Repeat Chart',number.slice(0,15));
+		diagram('container12','Diagram of repeating bits',bigram.slice(0,15));
+		diagram('container13','Diagram trigger repeats',threegram.slice(0,15));
 
 		});
 		$(".default").click(function(){
@@ -258,7 +258,7 @@
 
 			number.sort(compareNumeric);
 
-			diagram('container2','Діаграма повторень символів',number);
+			diagram('container2','Character Repeat Chart',number);
 
 		});
 
@@ -378,9 +378,9 @@
 			number.sort(compareNumeric);
 			bigram.sort(compareNumeric);
 			threegram.sort(compareNumeric);
-			diagram('container31','Діаграма повторень символів',number.slice(0,15));
-			diagram('container32','Діаграма повторень біграм',bigram.slice(0,15));
-			diagram('container33','Діаграма повторень триграм',threegram.slice(0,15));
+			diagram('container31','Character Repeat Chart',number.slice(0,15));
+			diagram('container32','Diagram of repeating bits',bigram.slice(0,15));
+			diagram('container33','Diagram trigger repeats',threegram.slice(0,15));
 			});
 	// ------------------zamina
 			$("#rozsh").click(function(){
@@ -439,17 +439,17 @@
 					yAxis: {
 						min: 0,
 						title: {
-							text: 'Кількість повторень'
+							text: 'Number of repetitions'
 						}
 					},
 					legend: {
 						enabled: false
 					},
 					tooltip: {
-						pointFormat: 'Зустрічається в тексті: <b>{point.y:.1f} раз</b>'
+						pointFormat: 'Occurs in the text: <b>{point.y:.1f} time</b>'
 					},
 					series: [{
-						name: 'Кількість',
+						name: 'Number',
 						data: data,
 
 						dataLabels: {
@@ -476,7 +476,7 @@
 	        type: 'line'
 	    },
 	    title: {
-	        text: 'Діаграма повторень символів'
+	        text: 'Character Repeat Chart'
 	    },
 	    subtitle: {
 
@@ -486,7 +486,7 @@
 	    },
 	    yAxis: {
 	        title: {
-	           text: 'Кількість повторень'
+	           text: 'Number of repetitions'
 	        }
 	    },
 	    plotOptions: {
@@ -498,13 +498,13 @@
 	        }
 	    },
 		tooltip: {
-						pointFormat: 'Зустрічається в тексті: <b>{point.y:.1f} раз</b>'
+						pointFormat: 'Occurs in the text: <b>{point.y:.1f} time</b>'
 					},
 	    series: [{
-	        name: 'Відкритий текст',
+	        name: 'Open text',
 	        data: data1
 	    }, {
-	        name: 'ШТ',
+	        name: 'Et',
 	        data:data2
 	    }]
 	});

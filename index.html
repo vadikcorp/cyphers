@@ -16,19 +16,18 @@
 <body>
   <header>
     <a href="index.html">
-        Методи шифрування та дешифрування
-        текстових повідомлень
+        METHODS OF ENCRYPTING AND DECRYPTING TEXT MESSAGES
     </a>
   </header>
-    <!-- --------MAIN_BLOCK -->
+    <!-- MAIN_BLOCK -->
     <div id="wrapper">
-<!-- -----------------content1(mainpage) -->
+<!-- content1(mainpage) -->
         <div class="content content1">
               <div class="blockpage1">
                   <p>
-                    <label for="text1">Введіть текст:</label>
+                    <label for="text1">Enter text:</label>
                   </p>
-                  <textarea placeholder="Ваш текст" id="text1" class="text1 gav" name="message" cols="80" rows="20" required ></textarea>
+                  <textarea placeholder="Your text" id="text1" class="text1 gav" name="message" cols="80" rows="20" required ></textarea>
                 <div class="">
                   <input class="default" type="button" value="default">
                   <input  class="clear" type="button" value="clear"></br>
@@ -39,19 +38,19 @@
 
 
         </div>
-<!-- --------CONTENT2(STATUCHNIY ANALIZ) -->
+<!-- CONTENT2(STATUCHNIY ANALIZ) -->
         <div class="content content2">
           <div class="blockpage1">
 
         <div id="findtext"></div>
-        <p><strong>Пошук буквосполучення:</strong></p>
+        <p><strong>Search letter combination:</strong></p>
         <input id="find" type="text">
 
 
-        <h3>Статистичний аналіз:</h3>
+        <h3>Statistical analysis:</h3>
           <select id="first">
-           <option value="number">Сортувати за: кількістю повторень</option>
-            <option value="sort">Сортувати за: алфавітом</option>
+           <option value="number">Sort by: Number of repetitions</option>
+            <option value="sort">Sort by: alphabet</option>
           </select></br>
           <div id="container11" style="width:80%; height:300px" ></div></br>
           </br>
@@ -60,28 +59,28 @@
           <div id="container13" style="width:80%; height:300px" ></div></br>
         </div>
       </div>
-<!-- ----------------CONTENT3(CEZAR) -->
+<!-- CONTENT3(CEZAR) -->
       <div class="content content3">
       <div class="blockpage1">
 
-				<h3> Текст який необхідно розшифрувати:</h3>
+				<h3>The text you want to decrypt:</h3>
 				<div id="cesarShifr" class="gav"></div>
 
-				<input  id="rozshifr" class="gavbutton" type="button" value="Розшифрувати"></br>
+				<input  id="rozshifr" class="gavbutton" type="button" value="Decrypt"></br>
 
 				<div id="deshifr">
 
 					<div id="key">
-						<p><strong>Введіть ключ:</strong></p> <input id="shift"  type="text"></input></br></br>
-						<input  id="keygen" class="gavbutton" type="button" value="Підібрати ключ">
+						<p><strong>Enter the key:</strong></p> <input id="shift"  type="text"></input></br></br>
+						<input  id="keygen" class="gavbutton" type="button" value="Pick the key">
 
           </br>
           </br>
-						<input  id="pusk" class="gavbutton" type="button" value="Пуск"></br>
+						<input id="pusk" class="gavbutton" type="button" value="Start"></br>
 					</div>
 						<div id="alphabetP">
-						<p id="alphP"><strong>Алфавіт:</strong></p>
-						<p id="shiftAlphP"><strong>Алфавіт після зсуву:</strong></p>
+						<p id="alphP"><strong>Alphabet:</strong></p>
+						<p id="shiftAlphP"><strong>Alphabet after shift:</strong></p>
 					</div>
 					<div id="alphabet">
 						<p id="alph"><strong></strong></p>
@@ -95,14 +94,14 @@
 </br>
 </br>
 </br>
-				<h3 class="hide">Зашифрований текст:</h3>
+				<h3 class="hide">Encrypted text:</h3>
     </br>
 
 				<div id="cesar" class="gav"></div><br>
-				<h3>Статистичний аналіз:</h3>
+				<h3>Statistical analysis:</h3>
 					<select id="four">
-					 <option value="number">Сортувати за: кількістю повторень</option>
-					  <option value="sort">Сортувати за: алфавітом</option>
+					 <option value="number">Sort by: Number of repetitions</option>
+            <option value="sort">Sort by: alphabet</option>
 					</select></br></br>
 					<div id="container2" style="width:80%; height:300px" ></div></br>
 
@@ -110,45 +109,45 @@
     </div>
 
 
-    <!-- ----------------------CONTENT4(ZAMINA) -->
+    <!-- CONTENT4(ZAMINA) -->
 
         <div class="content content4">
             <div class="blockpage1">
 
-      <h3> Текст який необхідно розшифрувати:</h3>
+      <h3> The text you want to decrypt:</h3>
       <div class='border gav' id="text3"></div>
     </br>
-      <input  id="rozsh" class="gavbutton" type="button" value="Розшифрувати"></br>
+      <input  id="rozsh" class="gavbutton" type="button" value="Decrypt"></br>
 
-              <h3>Пошук буквосполучення:</h3>
+              <h3>Search for a letter combination:</h3>
       <input id="find4" type="text">
-      <h3> Початковий Алфавіт:</h3>
+      <h3> Initial Alphabet:</h3>
       <div class='border alphabet gavtext' id="alphabet3"></div>
-      <h3> Модифікований Алфавіт:</h3>
+      <h3> Modified Alphabet:</h3>
       <div class='border alphabet gavtext'  id="alphabetMod3"></div><br><br>
 
-      <h3> Поміняти символи місцями:</h3>
-      <span class="gavtext">Замінити:</span>
+      <h3> Swap characters in places:</h3>
+      <span class="gavtext">Replace:</span>
       <input id="firstSymb" type="text">
-      <span class="gavtext">На:</span>
+      <span class="gavtext">On:</span>
 
       <input id="secondSymb" type="text">
-      <input  id="replace" class="gavbutton" type="button" value="Замінити"></br><br>
-      <h3> Відповідність між символами:</h3>
+      <input  id="replace" class="gavbutton" type="button" value="Replace"></br><br>
+      <h3> Match between characters:</h3>
       <table id="table3">
         <tr class="gavtext"></tr>
         <tr class="gavtext"></tr>
       </table>
 
-      <h3> Шифрований текст:</h3>
+      <h3> Encrypted text:</h3>
       <textarea id="text4" rows="12" cols="80"  name="text" class="gav"></textarea></br>
 
 
       <div id="empty" style="clear:both">
-      <h3>Ключ:</h3>
+      <h3>Key:</h3>
       <input id="emptyText" type="text" size="40">
       </div>
-      <h3>Статистичний аналіз:</h3>
+      <h3>Statistical analysis:</h3>
 
         <div id="container31" style="width:80%; height:300px" ></div></br>
         </br>
@@ -161,27 +160,27 @@
 
 
 
-    <!-- ------------------------CONTENT5(VIJENER) -->
+    <!-- CONTENT5(VIJENER) -->
     <div class="content content5">
       <div class="blockpage1">
 
-      <h3> Відкритий текст:</h3>
+      <h3> Open text:</h3>
       <div class='border gav' id="text5"></div>
-      <h3> Квадрат Віженера:</h3>
+      <h3> Square Vigenera:</h3>
       <table id="matrix" class="gav">
 
       </table>
       <br>
-      <h3> Ключ:</h3>
+      <h3> Key:</h3>
       <input  id="vigKey" type="text"></br><br>
 
 
-      <h3> Шифрований текст:</h3>
+      <h3>Encrypted text:</h3>
       <div class='border gav'  id="vigShifr"></div><br>
 
-      <h3> Розшифрований текст:</h3>
+      <h3> Decrypted text:</h3>
       <div class='border gav'  id="vigText"></div><br>
-      <h3> Статистичний аналіз:</h3>
+      <h3> Statistical analysis:</h3>
       <div id="container41" style="width:80%; height:300px" ></div></br>
 
 
@@ -196,20 +195,20 @@
 
 
 
-<!-- -----------------MENU-SIDEBAR -->
+<!-- MENU-SIDEBAR -->
         <div class="sidebar">
 
           <a class="button1">
-            <div><button type="button" name="button" class="button"><span>Статистичний</br> аналіз</span></button></div>
+            <div><button type="button" name="button" class="button"><span>Statistical </br> analysis</span></button></div>
           </a>
           <a class="button2">
-            <div><button type="button" name="button" class="button"><span>Шифр цезаря</span></button></div>
+            <div><button type="button" name="button" class="button"><span>Caesar cipher</span></button></div>
           </a>
           <a class="button3">
-            <div><button type="button" name="button" class="button"><span>Метод прямої</br> підстановки</span></button></div>
+            <div><button type="button" name="button" class="button"><span>Direct substitution </br> method</span></button></div>
           </a>
           <a class="button4">
-            <div><button type="button" name="button" class="button"><span>Шифр Віженера</span></button></div>
+            <div><button type="button" name="button" class="button"><span>Vigener cipher</span></button></div>
           </a>
 
         </div>
@@ -217,7 +216,7 @@
 
     </div>
 
-    <footer>Виконав студент групи кн-36 Васько Вадим</footer>
+    <footer>Completed by student Vasko Vadym</footer>
 
 </body>
 </html>
